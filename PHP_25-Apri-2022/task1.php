@@ -68,7 +68,7 @@ else echo $numC;
 
 echo "</br>"; 
 
-$kw=75;
+$kw=200;
 
 if ($kw<=50 )
 $bill=$kw*2.5;
@@ -79,7 +79,61 @@ $bill= ($kw-(150))*6.2+100*5+50*2.5 ;
 else
 {$bill= ($kw-(250))*7.5+100*6.2+100*5+50*2.5 ;}
 echo $bill;
+echo "</br>";
+$vote=18;
+if ($vote<18){
+    echo "is no eligible to vote";
+}else{
+    echo "is eligible to vote";
+}
 
+echo "</br> "; 
+
+$check=0;
+if($check<0)
+echo "the number is negative";
+elseif($check>0)
+echo "the number is positive";
+else
+echo "the number is zero";
+
+
+echo "</br> "; 
+
+$a=5;
+$b=2;
+$operatore="*";
+if ($operatore =="+")
+$calc=$a+$b;
+elseif($operatore =="-")
+$calc=$a-$b;
+elseif($operatore =="*")
+$calc=$a*$b;
+elseif($operatore =="/")
+$calc=$a/$b;
+else 
+echo "calculation error";
+echo $calc;
+
+echo "</br> "; 
+
+$arr=[60,86,95,63,55,74,79,62,50];
+$thesum=0;
+for ($i=0; $i <(count($arr)) ; $i++) { 
+    $thesum+= $arr[$i];
+$avg= $thesum/count($arr);
+}
+echo "The average is $avg "  ;
+if ($avg<60)
+echo "the score is F";
+elseif ($avg<70)
+echo "the score is D";
+elseif ($avg<80)
+echo "the score is C";
+elseif ($avg<90)
+echo "the score is B";
+elseif ($avg<100)
+echo "the score is A";
  ?>
 
 
