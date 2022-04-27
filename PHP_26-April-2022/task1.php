@@ -1,3 +1,4 @@
+
 <?php
 
 for($i=0; $i<=30 ;$i++){ 
@@ -43,15 +44,28 @@ echo "</br> ";
 $start=0;
 $second=1;
 $end=21;
-$summ=1;
 echo $start .", ".$second ;
 for($i=0;$i<$end;$i++){
     $series=$start+$second;
-    $second=$series;
-    $start=$second;
- 
-
+    $start=$second; 
+    $second=$series; 
     echo ", " .$series;
+}
+echo "</br> "; 
+echo "</br> "; 
+
+$output=1;
+$c=1;
+$numbers=1;
+for($i=1;$i<=15; $i++){  
+      
+    echo " " .$numbers; 
+ if($numbers==$c) { 
+    echo " <br/>" ; 
+    $output++; 
+    $c=$numbers+$output;
+    }    
+$numbers++  ; 
 }
 
 ?>
