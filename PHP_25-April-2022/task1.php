@@ -134,6 +134,12 @@ elseif ($avg<90)
 echo "the score is B";
 elseif ($avg<100)
 echo "the score is A";
+
+
+
+
+
+
  ?>
 
 
